@@ -1,11 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kv2H-9A5)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23388547)
+
 # TP 03 — Programación Funcional: TypeScript + Clojure
+
 **Paradigmas y Lenguajes de Programación 2026 — UNTDF / IDEI**
 
 ## Objetivo
 
 Implementar 50 ejercicios de programación funcional en dos lenguajes:
+
 - **25 ejercicios en TypeScript** — estilo funcional puro, mostrando el contraste con el paradigma imperativo
 - **25 ejercicios en Clojure** — funcional puro, con las estructuras persistentes e inmutables nativas de Clojure
 
@@ -15,13 +18,13 @@ Implementar 50 ejercicios de programación funcional en dos lenguajes:
 
 En todos los ejercicios TypeScript:
 
-| ❌ Prohibido | ✅ Permitido |
-|---|---|
-| `let`, `var` | `const` siempre |
-| `for`, `while`, `do...while` | `map`, `filter`, `reduce`, recursión |
-| `.push()`, `.pop()`, `.splice()` | spread: `[...arr, nuevo]` |
-| `.sort()` in-place sobre el parámetro | `[...arr].sort(comparador)` |
-| Mutar objetos recibidos (`obj.x = y`) | spread: `{ ...obj, x: y }` |
+| ❌ Prohibido                          | ✅ Permitido                         |
+| ------------------------------------- | ------------------------------------ |
+| `let`, `var`                          | `const` siempre                      |
+| `for`, `while`, `do...while`          | `map`, `filter`, `reduce`, recursión |
+| `.push()`, `.pop()`, `.splice()`      | spread: `[...arr, nuevo]`            |
+| `.sort()` in-place sobre el parámetro | `[...arr].sort(comparador)`          |
+| Mutar objetos recibidos (`obj.x = y`) | spread: `{ ...obj, x: y }`           |
 
 ---
 
@@ -60,10 +63,12 @@ tp03-funcional/
 ## Dónde implementar
 
 ### TypeScript
+
 Abrí `typescript/src/index.ts`. Cada función tiene un stub con `throw new Error("No implementado")`.  
 Reemplazá el `throw` con tu implementación. **No modificar las firmas de las funciones.**
 
 ### Clojure
+
 Abrí `clojure/src/ejercicios/core.clj`. Cada función tiene un stub con `(throw ...)`.  
 Reemplazá el `throw` con tu implementación. **No modificar los nombres de las funciones.**
 
@@ -163,19 +168,19 @@ lein test ejercicios.grupo5-test
 
 ## Puntuación
 
-| Grupo | Ejercicios | Puntos |
-|-------|------------|--------|
-| TS-G1 Funciones Puras | TS-01 a TS-05 | 10 pts |
-| TS-G2 Inmutabilidad | TS-06 a TS-10 | 10 pts |
-| TS-G3 map/filter/reduce | TS-11 a TS-18 | 16 pts |
-| TS-G4 Composición y HOF | TS-19 a TS-22 | 8 pts |
-| TS-G5 Contraste | TS-23 a TS-25 | 6 pts |
-| CLJ-G1 Funciones básicas | CLJ-01 a CLJ-05 | 10 pts |
-| CLJ-G2 map/filter/reduce | CLJ-06 a CLJ-11 | 12 pts |
-| CLJ-G3 HOF | CLJ-12 a CLJ-16 | 10 pts |
-| CLJ-G4 Recursión | CLJ-17 a CLJ-20 | 8 pts |
-| CLJ-G5 Colecciones | CLJ-21 a CLJ-25 | 10 pts |
-| **Total** | | **100 pts** |
+| Grupo                    | Ejercicios      | Puntos      |
+| ------------------------ | --------------- | ----------- |
+| TS-G1 Funciones Puras    | TS-01 a TS-05   | 10 pts      |
+| TS-G2 Inmutabilidad      | TS-06 a TS-10   | 10 pts      |
+| TS-G3 map/filter/reduce  | TS-11 a TS-18   | 16 pts      |
+| TS-G4 Composición y HOF  | TS-19 a TS-22   | 8 pts       |
+| TS-G5 Contraste          | TS-23 a TS-25   | 6 pts       |
+| CLJ-G1 Funciones básicas | CLJ-01 a CLJ-05 | 10 pts      |
+| CLJ-G2 map/filter/reduce | CLJ-06 a CLJ-11 | 12 pts      |
+| CLJ-G3 HOF               | CLJ-12 a CLJ-16 | 10 pts      |
+| CLJ-G4 Recursión         | CLJ-17 a CLJ-20 | 8 pts       |
+| CLJ-G5 Colecciones       | CLJ-21 a CLJ-25 | 10 pts      |
+| **Total**                |                 | **100 pts** |
 
 Cada grupo se evalúa como unidad: todos los tests del grupo deben pasar.
 
